@@ -1,4 +1,6 @@
-﻿namespace Gauss_OOP
+﻿using Gauss_OOP.Composicao;
+
+namespace Gauss_OOP
 {
     internal class Program
     {
@@ -50,6 +52,16 @@
             q.CalcularPerimetro();
             Console.WriteLine("A área do quadrado é : " + q.Area + " m2 ");
             Console.WriteLine("O perímetro do quadrado é : " + q.Perimetro + " m ");
+
+           
+
+
+
+            Console.WriteLine("# # # # # Composição # # # # #");
+
+            var fiat = new Carro();
+            fiat.LigarCarro();
+            fiat.GirarRodas();
 
             Console.ReadKey();
         }
